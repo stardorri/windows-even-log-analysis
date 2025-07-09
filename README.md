@@ -4,7 +4,7 @@ This project demonstrates how to use Windows Event Viewer and Sysmon to detect s
 
 ---
 
-## 🛠Tools Used
+## Tools Used
 - **Windows Event Viewer**
 - **Sysmon** (System Monitor) by Sysinternals
 - **Command Prompt / PowerShell**
@@ -14,18 +14,11 @@ This project demonstrates how to use Windows Event Viewer and Sysmon to detect s
 
 ## Steps Performed
 
-### Step 1: Basic Event Log Exploration
-- Used Windows Event Viewer to analyze:
-  - **4625**: Failed Logon
-  - **4672**: Special Privileges Assigned
-  - **4688**: Process Creation
-  - **4720**: User Account Creation
-
-### Step 2: Install Sysmon
+### Step 1: Install Sysmon
 - Installed Sysmon with a basic config to track process creation
 - Verified Event ID **1 (Process Create)** was being captured
 
-### Step 3: Simulate Suspicious Activity
+### Step 2: Simulate Suspicious Activity
 - Ran an **obfuscated PowerShell command** using `-EncodedCommand`
 - Captured the encoded PowerShell execution in **Sysmon Event ID 1**
 
